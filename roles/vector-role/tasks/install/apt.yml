@@ -1,10 +1,6 @@
 ---
 
-- name: Install Python
-  ansible.builtin.apt:
-    name: python
-
 - name: Install Vector
   #become: true
   ansible.builtin.apt:
-    deb: "vector-{{ vector_version }}-1.arm64.deb"
+    deb: "vector_{{ vector_version }}-1_amd64.deb"

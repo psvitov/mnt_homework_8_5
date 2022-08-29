@@ -8,10 +8,10 @@ platforms:
     image: centos:7
     pre_build_image: true
   - name: centos_8
-    image: centos:8      
+    image: centos:8_update      
     pre_build_image: true
   - name: ubuntu
-    image: ubuntu:latest
+    image: ubuntu:python
     pre_build_image: true
 provisioner:
   name: ansible
