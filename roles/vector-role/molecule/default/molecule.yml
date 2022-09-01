@@ -5,13 +5,13 @@ driver:
   name: docker
 platforms:
   - name: centos_7
-    image: centos:7
+    image: docker.io/pycontribs/centos:7
     pre_build_image: true
   - name: centos_8
-    image: psvitov/centos8_update      
+    image: docker.io/psvitov/centos8_update      
     pre_build_image: true
   - name: ubuntu
-    image: psvitov/ubuntu_python
+    image: docker.io/psvitov/ubuntu_python
     pre_build_image: true
 provisioner:
   name: ansible
